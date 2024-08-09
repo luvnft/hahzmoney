@@ -1,5 +1,5 @@
 import { useMe } from "@/providers/MeProvider";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { SparkleIcon } from "@radix-ui/react-icons"; // Import SparkleIcon
 import { Button, Flex, Link, TextField, IconButton, Text } from "@radix-ui/themes";
 import { useState } from "react";
 import ThemeButton from "../ThemeButton";
@@ -21,11 +21,11 @@ export default function OnBoarding() {
     >
       <Flex justify={"between"} align={"baseline"} width={"100%"}>
         <IconButton
-          onClick={() => window.open("https://github.com/passkeys-4337/smart-wallet", "_blank")}
+          onClick={() => window.open("https://blkluv.org", "_blank")}
           variant="soft"
           size={"3"}
         >
-          <GitHubLogoIcon />
+          <SparkleIcon /> {/* Replace GitHubLogoIcon with SparkleIcon */}
         </IconButton>
 
         <ThemeButton />
