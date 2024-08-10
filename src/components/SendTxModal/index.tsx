@@ -155,7 +155,7 @@ export default function SendTxModal() {
         <Flex direction="column" justify="center" align="center" grow="1" gap="5">
           {true ? (
             <>
-              <CheckCircledIcon height="32" width="100%" color="#AFF160" />
+              <CheckCircledIcon height="32" width="100%" color="green" />
               <Link
                 href={`${CHAIN.blockExplorers.default.url}/tx/${txReceipt?.receipt?.transactionHash}`}
                 target="_blank"
@@ -163,7 +163,7 @@ export default function SendTxModal() {
               >
                 <Flex direction="row" gap="2">
                   <Text size="2">See transaction</Text>
-                  <ExternalLinkIcon style={{ alignSelf: "center", color: "#AFF160" }} />
+                  <ExternalLinkIcon style={{ alignSelf: "center", color: "green" }} />
                 </Flex>
               </Link>
             </>
@@ -239,7 +239,7 @@ export default function SendTxModal() {
                         <CrossCircledIcon
                           height="20"
                           width="20"
-                          color="#AFF160"
+                          color="green"
                           style={{ visibility: "hidden" }}
                         />
                       )}
@@ -273,7 +273,7 @@ export default function SendTxModal() {
                           <CrossCircledIcon
                             height="20"
                             width="20"
-                            color="#AFF160"
+                            color="green"
                             style={{ visibility: "hidden" }}
                           />
                         )}

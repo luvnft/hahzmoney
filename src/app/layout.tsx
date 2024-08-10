@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <SmartWalletProvider>
               <WalletConnectProvider>
                 <ThemeProvider attribute="class">
-                  <Theme style={css} radius={"full"} accentColor={"#AFF160"}>
+                  <Theme style={css} radius={"full"} accentColor={"green"}>
                     <ModalProvider>
                       <ModalOnWCEvent>{children}</ModalOnWCEvent>
                     </ModalProvider>
