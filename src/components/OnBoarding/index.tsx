@@ -1,5 +1,5 @@
 import { useMe } from "@/providers/MeProvider";
-import { SparkleIcon } from "@radix-ui/react-icons"; // Import SparkleIcon
+import { StarIcon } from "@radix-ui/react-icons"; // Import SparkleIcon
 import { Button, Flex, Link, TextField, IconButton, Text } from "@radix-ui/themes";
 import { useState } from "react";
 import ThemeButton from "../ThemeButton";
@@ -25,7 +25,7 @@ export default function OnBoarding() {
           variant="soft"
           size={"3"}
         >
-          <SparkleIcon /> {/* Replace GitHubLogoIcon with SparkleIcon */}
+          <StarIcon /> {/* Replace GitHubLogoIcon with SparkleIcon */}
         </IconButton>
 
         <ThemeButton />
