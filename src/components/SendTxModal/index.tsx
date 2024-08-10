@@ -53,13 +53,6 @@ export default function SendTxModal() {
 
   function handleUserInputAmount(e: any) {
     const value = e.target.value;
-    // const amount = Number(value);
-    // if ((amount > Number(balance) && value !== "") || value === "") {
-    //   setIsBelowBalance(false);
-    // }
-    // if (amount <= Number(balance) && value !== "") {
-    //   setIsBelowBalance(true);
-    // }
     setUserInputAmount(value);
   }
 
@@ -162,7 +155,7 @@ export default function SendTxModal() {
         <Flex direction="column" justify="center" align="center" grow="1" gap="5">
           {true ? (
             <>
-              <CheckCircledIcon height="32" width="100%" color="var(--teal-11)" />
+              <CheckCircledIcon height="32" width="100%" color="#AFF160" />
               <Link
                 href={`${CHAIN.blockExplorers.default.url}/tx/${txReceipt?.receipt?.transactionHash}`}
                 target="_blank"
@@ -170,7 +163,7 @@ export default function SendTxModal() {
               >
                 <Flex direction="row" gap="2">
                   <Text size="2">See transaction</Text>
-                  <ExternalLinkIcon style={{ alignSelf: "center", color: "var(--teal-11)" }} />
+                  <ExternalLinkIcon style={{ alignSelf: "center", color: "#AFF160" }} />
                 </Flex>
               </Link>
             </>
@@ -246,7 +239,7 @@ export default function SendTxModal() {
                         <CrossCircledIcon
                           height="20"
                           width="20"
-                          color="var(--teal-11)"
+                          color="#AFF160"
                           style={{ visibility: "hidden" }}
                         />
                       )}
@@ -267,7 +260,6 @@ export default function SendTxModal() {
                         type="number"
                         inputMode="decimal"
                         min={0}
-                        // max={balance?.toString() || 0}
                         size={"3"}
                         step={0.01}
                         value={userInputAmount}
@@ -281,7 +273,7 @@ export default function SendTxModal() {
                           <CrossCircledIcon
                             height="20"
                             width="20"
-                            color="var(--teal-11)"
+                            color="#AFF160"
                             style={{ visibility: "hidden" }}
                           />
                         )}

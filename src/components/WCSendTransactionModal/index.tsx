@@ -121,7 +121,7 @@ export default function WCSendTransactionModal({ params, origin, onSuccess }: Pr
         <Flex direction="column" justify="center" align="center" grow="1" gap="5">
           {true ? (
             <>
-              <CheckCircledIcon height="32" width="100%" color="var(--teal-11)" />
+              <CheckCircledIcon height="32" width="100%" color="#AFF160" />
               <Link
                 href={`${CHAIN.blockExplorers.default.url}/tx/${txReceipt?.receipt?.transactionHash}`}
                 target="_blank"
@@ -129,7 +129,7 @@ export default function WCSendTransactionModal({ params, origin, onSuccess }: Pr
               >
                 <Flex direction="row" gap="2">
                   <Text size="2">See transaction</Text>
-                  <ExternalLinkIcon style={{ alignSelf: "center", color: "var(--teal-11)" }} />
+                  <ExternalLinkIcon style={{ alignSelf: "center", color: "#AFF160" }} />
                 </Flex>
               </Link>
             </>
@@ -193,7 +193,7 @@ export default function WCSendTransactionModal({ params, origin, onSuccess }: Pr
                         <CrossCircledIcon
                           height="20"
                           width="20"
-                          color="var(--teal-11)"
+                          color="#AFF160"
                           style={{ visibility: "hidden" }}
                         />
                       )}
